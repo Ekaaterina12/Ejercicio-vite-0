@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0; 
+  box-sizing: border-box;
+}
+
+//fuentes
+@font-face {
+  font-family: 'CinzelDecorative-Bold.ttf';
+  src: url('../fonts/CinzelDecorative-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CinzelDecorative-Black.ttf';
+  src: url('../fonts/CinzelDecorative-Black.ttf');
+}
+
+//fuentes y colores
+
+$fuenteTexto: 'CinzelDecorative-Bold.ttf';
+$fuente01: 'CinzelDecorative-Black.ttf';
+
+$color01: #ffffff;
+$color02: #7cca87;
+$color03: #b1ca88;
+
+$minimo1: 400px;
+
+
+
+header, nav, main, footer, section{
+  width: 100%;
+  
+}
