@@ -24,12 +24,44 @@ $fuente01: 'CinzelDecorative-Black.ttf';
 $color01: #ffffff;
 $color02: #7cca87;
 $color03: #b1ca88;
+$color4:  #62b1df;
 
 $minimo1: 400px;
+
+$tablet: 800px;
+$destop: 1200px;  
 
 
 
 header, nav, main, footer, section{
   width: 100%;
+  
+}
+
+h3,h2,h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:600;
+  font-size: 30px;
+  }
+
+p{
+  font-family: monospace;
+  font-size: 15px;
+    }
+
+section{
+  width: 100%;
+  padding: 2rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2 rem;
+  padding: 2rem 0rem; 
+
+  @media only screen and (min-width: $tablet){
+    padding: 4rem 0rem;
+  }
   
 }
