@@ -39,13 +39,13 @@ header, nav, main, footer, section{
 }
 
 h3,h2,h1{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight:600;
   font-size: 30px;
   }
 
 p{
-  font-family: monospace;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 15px;
     }
 
@@ -57,11 +57,12 @@ section{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  row-gap: 2 rem;
+  row-gap: 2rem;
   padding: 2rem 0rem; 
 
   @media only screen and (min-width: $tablet){
     padding: 4rem 0rem;
+    row-gap: 4rem;
   }
   
 }
