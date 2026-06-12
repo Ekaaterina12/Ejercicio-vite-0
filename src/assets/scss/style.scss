@@ -1,7 +1,8 @@
-@use 'config' as c;
-@use 'art01';
-@use 'art02';
-@use 'art03';
+@use './assets/config' as c;
+@use './assets/art01';
+@use './assets/art02';
+@use './assets/art03';
+@use './assets/artJs';
 
 *{
   margin: 0;
@@ -32,7 +33,7 @@ header{
 }
 
 .boton{
-  text-decoration: none;
+  
   color: c.$color01;
   font-size: 1.5 rem;
   font-family: 'c.$fuenteTexto';
@@ -42,7 +43,7 @@ header{
   transition: all 0.3s ease;
 
   @media only screen and (min-width: c.$minimo1){
-    color: red;
+    color: rgb(181, 227, 245);
   }
 
   &:hover{
