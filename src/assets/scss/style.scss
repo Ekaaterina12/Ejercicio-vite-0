@@ -41,6 +41,7 @@ header{
   border: 2px solid c.$color01;
   border-radius: 5px;
   transition: all 0.3s ease;
+  
 
   @media only screen and (min-width: c.$minimo1){
     color: rgb(181, 227, 245);
@@ -51,4 +52,16 @@ header{
     color: c.$color03;
   }
 
+}
+
+.desplegable{
+  height: 50px;
+  overflow: hidden;
+  interpolate-size: allow-keywords;
+  transition: height .5s ease-in-out;
+  
+}
+
+.open{
+  height: auto;
 }
