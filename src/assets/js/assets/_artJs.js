@@ -72,6 +72,12 @@ botonesDesplegar.forEach((item) => {
         
         miParrafo.classList.toggle("open")
 
+        
+        item.textContent = miParrafo.classList.contains("open") ? "leer menos" : "leer más"
+
+            
+            
+
     })
 
 })
