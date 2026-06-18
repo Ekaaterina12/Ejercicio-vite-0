@@ -1,8 +1,5 @@
 export function acordeon01(){
-    console.log("entramos")
-}
-
-document.querySelectorAll(".boton").forEach((btn) => {
+   document.querySelectorAll(".boton").forEach((btn) => {
     btn.addEventListener("click", () => {
 
         const parrafo = btn.parentElement.querySelector(".parrafo");
@@ -14,3 +11,5 @@ document.querySelectorAll(".boton").forEach((btn) => {
             : "leer más";
     });
 });
+}
+
