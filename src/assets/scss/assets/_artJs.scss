@@ -1,16 +1,16 @@
 @use 'config' as c;
- 
+
 .artJs{
     width: 100%;
     padding: 0 1.5rem;
-   
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     row-gap: 2rem;
- 
-    @media only screen and (min-width:c.$tablet){
+
+    @media only screen and (min-width:c.$desktop){
         width: 80%;
         padding: initial;
     }
@@ -40,5 +40,18 @@
                 padding: 2rem;
             }
         }
+        .desplegable{
+            height: 50px;
+            overflow: hidden;
+            interpolate-size: allow-keywords;
+            transition: height .5s ease-in-out;
+            // transition: .5s;
+        }
+        .open{
+            height: auto;           
+        }
     }
 }
+
+
+

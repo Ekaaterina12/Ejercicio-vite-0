@@ -1,0 +1,43 @@
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  animation: showY 1s;
+}
+
+<<<<<<< HEAD
+.fadeOut{
+  opacity: 0;
+  scale: 0.5;
+}
+
+.fadeIn{
+  transition: all 1s ease-in;
+  opacity: 1;
+  scale: 1;
+
+=======
+.fadeOut {
+  opacity: 0;
+  scale: 0.5;
+  transform: translateX(-300px);
+}
+
+.fadeIn {
+  transition: all 1s ease-in;
+  transform: translateX(0);
+  opacity: 1;
+  scale: 1;
+>>>>>>> 4fda60056066f7e0f8d02cf7f4fb1b096129fbd5
+}
+
+@keyframes showY {
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
