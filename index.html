@@ -11,33 +11,47 @@
   </head>
   <body>
  <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary w-100">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+
+            <a class="navbar-brand" href="#"><img class="rounded-4" src="https://picsum.photos/50/50" alt=""></a>
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
               <span class="navbar-toggler-icon"></span>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/#">Incio</a>
+                  <a class="nav-link active" aria-current="page" href="/#section1">Incio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#section1">Section 1</a>
+                  <a class="nav-link" href="#section2">Section 1</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#section3">Sobre nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#section4">Sobre nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#section5">Sobre nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#section6">Sobre nosotros</a>
+                </li>
+                
+                  
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <a class="nav-link disabled" aria-disabled="section4">Información</a>
                 </li>
               </ul>
             </div>
@@ -47,7 +61,7 @@
     <header>
       <div class="nav__container">
         
-        <button class="nav__container--darkModeButton">
+        <button class="header--darkModeButton">
             <i class="fa-solid fa-moon"></i>
         </button>
       </div>      
@@ -83,7 +97,7 @@
           </div>
         </article>
 
-        <article class="artJs">
+        <article class="artJs" id="section2">
           <h3>Desplegable con JS (añadir quitar clases con js)</h3>
           <div>
 
@@ -113,7 +127,7 @@
         <h2>Encabezado h2</h2>
 
         <!-- Art01 -->
-        <article class="art01">
+        <article class="art01" id="section3">
           <div class="content">
             <h3>Encabezado h3</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque quos recusandae amet nihil numquam nam, ipsa quo eveniet id veniam! Itaque nulla deserunt fuga nemo temporibus minus obcaecati reiciendis similique esse ipsum quasi, non quisquam neque veritatis ratione suscipit, quo assumenda iste odio dignissimos eligendi. Ipsam inventore quam in.</p>
@@ -131,13 +145,13 @@
           </div>
 
           <div>
-            <a href="" class="item">
+            <a href="" class="item" id="section03"> 
               <h4>Encabezado h4</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod aliquam, quibusdam molestiae at repudiandae et?</p>
               <img src="/src/assets/img/panes.avif" alt="texto cuando la imagen no se carga" title="el texto cuando pongo el ratón encima de la imagen" width="700" height="700">              
             </a>
 
-            <a href="" class="item">
+            <a href="" class="item"> 
               <h4>Servicio de posicionamiento SEO</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod aliquam, quibusdam molestiae at repudiandae et?</p>
               <img src="/src/assets/img/donut.avif" alt="de qué va esta imagen pues como no carga te la explico" title="MIra nuestro servicio de posicionamiento SEO en este enlace">
@@ -226,7 +240,7 @@
         <h2>Servicios</h2>
 
         <!-- Art03 -->
-        <article class="art03">
+        <article class="art03" id="section4"> 
 
           <div>
             <h3>Servicio 1</h3>
@@ -263,7 +277,7 @@
         </article>
 
         <!-- Art03 -->
-        <article class="art03">
+        <article class="art03" id="section5">
 
           <div>
             <h3>servicio 3</h3>
@@ -282,7 +296,7 @@
         </article>
 
         <!-- Art03 -->
-        <article class="art03 invert">
+        <article class="art03 invert" id="section6">
 
           <div>
             <h3>servicio 3</h3>
@@ -385,6 +399,39 @@
           </div>
         </div>
 
+      </section>
+
+      <section id="section8">
+        <h2>Boostrap 5</h2>
+          <div class="container text-center">
+            <h3>Grid Boostrap</h3>
+              
+            <div class="row">
+              <div class="col-4 bg-success">
+              Column1
+              </div>
+              <div class="col-4 bg-primary">
+              Column2
+              </div>
+              <div class="col-4 bg-light">
+              Column3
+            </div>
+
+            </div>
+            <div class="row gap-2">
+              <div class="col-6 bg-warning">
+                <img class="img-fluid" src="https://picsum.photos/seed/picsum/200/300" alt="">
+              </div>
+
+              <div class="col-6 bg-secondary">
+                <img class="img-fluid" src="https://picsum.photos/200/300" alt="">
+              </div>
+            
+            </div>
+            </div>
+
+
+        </div>
       </section>
 
     </main>

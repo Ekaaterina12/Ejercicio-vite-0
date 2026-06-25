@@ -2,7 +2,7 @@ export default function darkMode() {
 
   //1. Buscar el botón - Busca el botón del modo oscuro
   const $btnDarkMode = document.querySelector(
-    ".nav__container--darkModeButton"
+    ".header--darkModeButton"
   );
 
   const $icon = $btnDarkMode.querySelector(".fa-solid");
