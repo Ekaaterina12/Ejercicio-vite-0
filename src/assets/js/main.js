@@ -11,6 +11,8 @@ import darkMode from "./assets/_darkmode.js";
 import observer from "./assets/_observer.js";
 import ScrollTop from "./assets/_navScrollTop.js";
 import loadImage from "./_loadImage.js";
+import modal from "./assets/_model.js";
+import Dialog from "./assets/templates/Dialog.js";
 
 
 
@@ -27,5 +29,35 @@ document.addEventListener("DOMContentLoaded", () => {
   darkMode();
   observer();
   ScrollTop();
-  loadImage()
+  loadImage();
+
+
+
+
+  const $btnOpenModal = document.querySelector("#openModal1");
+
+  $btnOpenModal.addEventListener("click", () => {
+    abrirModal(1);
+    
 });
+
+  const $btnOpenModal2 = document.querySelector("#openModal2");
+
+  $btnOpenModal2.addEventListener("click", () => {
+    abrirModal(2)
+});
+
+  const $btnOpenModal3 = document.querySelector("#openModal3");
+
+  $btnOpenModal3.addEventListener("click", () => {
+    abrirModal(3)
+});
+
+function abrirModal(id){
+  console.log(id)
+      document.body.appendChild(
+      modal(Dialog(id)));
+}
+
+});
+

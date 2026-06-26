@@ -1,0 +1,14 @@
+@use 'config' as c;
+
+.Dialog{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width:c.$tablet){
+        flex-direction: column;
+        
+    }
+}

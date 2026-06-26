@@ -11,6 +11,8 @@
 @use "./assets/topBotton";
 @use "./assets/nav";
 @use "./assets/darkmode";
+@use "./assets/modal";
+@use "./assets/dialog";
 
 body {
   transition: all 0.5s;
