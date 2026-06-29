@@ -13,6 +13,10 @@ export default function Dialog(id){
 
         <img class="img-fluid" src="https://picsum.photos/seed/picsum/400/400" alt="">
 
+        <button class="btn btn-primary" type="button" data-modal-close>acepatar</button>
+
+        <button class="btn btn-outline-primary" type="button" data-modal-close>acepatar</button>
+
         </div> 
 
     `;
@@ -30,6 +34,10 @@ export default function Dialog(id){
 
         <img class="img-fluid" src="https://picsum.photos/seed/picsum/400/400" alt="">
 
+        <button class="btn btn-primary" type="button" data-modal-close>acepatar</button>
+
+        <button class="btn btn-outline-primary" type="button" data-modal-close>acepatar</button>
+
         </div> 
 
     `;
@@ -44,9 +52,13 @@ export default function Dialog(id){
 
         <div class = "Dialog"> 
             
-        <h3> slava UKRAINE</h3>
+        <h3> Plantas</h3>
 
         <img class="img-fluid" src="https://picsum.photos/seed/picsum/400/400" alt="">
+
+        <button class="btn btn-primary" type="button" data-modal-close>acepatar</button>
+
+        <button class="btn btn-outline-primary" type="button" data-modal-close>acepatar</button>
 
         </div> 
 

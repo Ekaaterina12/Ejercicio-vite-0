@@ -16,24 +16,49 @@ export default function modal (template) {
 
     </div>
 `;
+    // Buscar el botón de cerrar - querySelector- Busca dentro de la caja el elemento que tenga la clase modal--btn-close
+    const $btnClose = $modal.querySelector(".modal--btn-close")
+    const $modalContainer = $modal.querySelector(".modal__container")
+
+    //2. Esperar a que hagan clic- modal remove: "Cuando hagan clic, elimina el modal."
+    $btnClose.addEventListener("click" , () => $modal.remove());
 
 
-
+    //Escuchar clics en todo el modal- que es event? Cuando haces clic, JavaScript guarda información.
     $modal.addEventListener("click", (event) => {
+        //"El elemento exacto sobre el que hiciste clic." 
+        if(event.target.closest("[data-modal-close]")){ 
+            $modal.remove()
 
-        const $btnClose = $modal.querySelector(".modal--btn-close")
-        
-        $btnClose.addEventListener("click" , () => $modal.remove());
-        return $modal
+        }
 
-        
+        if(!$modalContainer.contains(event.target)){
+            $modal.remove()
+        }
 
-        
-        
     });
     
     //para cargarlo en cualquier parte de la página
     return $modal;
 }
+
+//Usuario hace clic
+
+     //  │
+
+    //   ▼
+
+//¿Dónde hizo clic?
+
+    //   │
+
+    //   ▼
+
+//¿Fue en el botón de cerrar?
+
+      // │
+   //Sí ───────► Elimina el modal
+
+   //No ───────► No hace nada
 
 

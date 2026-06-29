@@ -13,6 +13,7 @@ import ScrollTop from "./assets/_navScrollTop.js";
 import loadImage from "./_loadImage.js";
 import modal from "./assets/_model.js";
 import Dialog from "./assets/templates/Dialog.js";
+import validationForm from "./assets/_validationForm.js";
 
 
 
@@ -59,5 +60,6 @@ function abrirModal(id){
       modal(Dialog(id)));
 }
 
+ validationForm();
 });
 
